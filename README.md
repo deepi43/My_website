@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Shop</title>
+</head>
+<body>
+
+<h1>Welcome to My Shop</h1>
+<p>This is my first website 🎉</p>
+
+</body>
+</html>
