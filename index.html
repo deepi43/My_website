@@ -129,6 +129,23 @@ function sendOrder() {
 <footer>
   <p>© Sweet Bakery</p>
 </footer>
+<script>
+var images = [
+  "https://images.unsplash.com/photo-1599785209707-28b7b0a4d0d2",
+  "https://images.unsplash.com/photo-1608198093002-ad4e005484ec",
+  "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b"
+];
 
+var i = 0;
+
+function slideShow() {
+  document.getElementById("slide").src = images[i];
+  i++;
+  if(i >= images.length) { i = 0; }
+  setTimeout(slideShow, 2000);
+}
+
+slideShow();
+</script>
 </body>
 </html>
