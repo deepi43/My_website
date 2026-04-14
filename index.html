@@ -71,6 +71,27 @@
 
 <div class="card">
   <h2>Contact</h2>
+  <h3>Order Now</h3>
+
+<input type="text" id="name" placeholder="Your Name"><br><br>
+<input type="text" id="item" placeholder="What do you want?"><br><br>
+<input type="text" id="phone" placeholder="Your Phone Number"><br><br>
+
+<button onclick="sendOrder()">Send Order on WhatsApp</button>
+
+<script>
+function sendOrder() {
+  var name = document.getElementById("name").value;
+  var item = document.getElementById("item").value;
+  var phone = document.getElementById("phone").value;
+
+  var message = "Name: " + name + "%0AItem: " + item + "%0APhone: " + phone;
+
+  var url = "https://wa.me/918667639855?text=" + message;
+
+  window.open(url, "_blank");
+}
+</script>
   <p>📞 Phone: 8667639855</p>
   <a class="btn" href="https://wa.me/918667639855">Order on WhatsApp</a>
 </div>
